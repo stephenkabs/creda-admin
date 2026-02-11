@@ -104,7 +104,7 @@
 
 {{-- ADMIN CONTROL GRID --}}
 <div class="admin-grid">
-<a href="gh" class="admin-card">
+<a href="{{ route('admin.organizations.index') }}" class="admin-card">
     <div class="admin-icon"><i class="fas fa-building"></i></div>
     <div class="admin-title">Organizations</div>
     <div class="admin-desc">
@@ -113,7 +113,7 @@
 </a>
 
 
-<a href="fghgfh" class="admin-card">
+<a href="{{ route('users.index') }}" class="admin-card">
     <div class="admin-icon"><i class="fas fa-users"></i></div>
     <div class="admin-title">All Users</div>
     <div class="admin-desc">View and manage platform users</div>

@@ -140,7 +140,21 @@ Route::get('/admin/security/login-attempts',
  ->name('admin.login-attempts');
 
 
+Route::middleware(['auth','role:admin'])->prefix('admin')->group(function(){
 
+    Route::get('/organizations',
+        [\App\Http\Controllers\Admin\OrganizationController::class,'index'])
+        ->name('admin.organizations.index');
+
+    Route::get('/organizations/{organization}',
+        [\App\Http\Controllers\Admin\OrganizationController::class,'show'])
+        ->name('admin.organizations.show');
+
+    Route::patch('/organizations/{organization}/toggle',
+        [\App\Http\Controllers\Admin\OrganizationController::class,'toggleStatus'])
+        ->name('admin.organizations.toggle');
+
+});
 
 
 

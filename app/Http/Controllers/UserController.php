@@ -110,7 +110,7 @@ public function edit(User $user)
     $roles = Role::pluck('name','name')->all();
     $userRoles = $user->roles->pluck('name','name')->all();
 
-    // $branches = Branch::pluck('name','id'); // add this
+    $branches = Branch::pluck('name','id'); // add this
 
     return view('users.edit', compact('roles','user','userRoles','branches'));
 }
