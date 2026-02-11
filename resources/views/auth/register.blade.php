@@ -3,167 +3,165 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Create your account</title>
+  <title>Institution Onboarding • Creda Loans Management System</title>
 
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="shortcut icon" href="/assets/images/favicon.png">
 
-  <style>
-    /* Apple-like shimmer */
-    .shimmer{
-      position: relative;
-      overflow: hidden;
-    }
-    .shimmer::after{
-      content:"";
-      position:absolute;
-      inset:0;
-      background: linear-gradient(
-        110deg,
-        rgba(255,255,255,0) 30%,
-        rgba(255,255,255,.55) 45%,
-        rgba(255,255,255,0) 60%
-      );
-      animation: shimmer 1.4s infinite;
-    }
-    @keyframes shimmer{
-      from { transform: translateX(-100%); }
-      to   { transform: translateX(100%); }
-    }
-  </style>
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 </head>
 
-<body class="min-h-screen bg-[#e5e5e5] flex items-center justify-center p-4 pb-16">
+<body class="min-h-screen bg-gray-100 flex items-start justify-center p-6">
 
-<!-- Skeleton Loader -->
-<div id="skeleton"
-     class="fixed inset-0 z-50 flex items-center justify-center bg-[#e5e5e5]">
+  <div class="w-full max-w-5xl">
 
-  <div class="w-full max-w-[920px] bg-white/95 rounded-2xl shadow-2xl ring-1 ring-black/10
-              flex flex-col md:flex-row overflow-hidden animate-pulse">
+    <!-- TOP IMAGE CARD -->
+    <div class="relative rounded-2xl overflow-hidden shadow-lg mb-8">
+      <img src="/6.webp"
+           alt="Creda Loans Management System"
+           class="w-full h-[280px] object-cover">
 
-    <div class="hidden md:block md:w-1/2 bg-gray-300 shimmer"></div>
+      <div class="absolute inset-0 bg-black/55"></div>
 
-    <div class="w-full md:w-1/2 p-10 space-y-5">
-      <div class="h-10 w-44 mx-auto bg-gray-300 rounded shimmer"></div>
-      <div class="h-12 rounded-xl bg-gray-300 shimmer"></div>
-      <div class="h-12 rounded-xl bg-gray-300 shimmer"></div>
-      <div class="h-12 rounded-xl bg-gray-300 shimmer"></div>
-      <div class="h-12 rounded-xl bg-gray-400 shimmer"></div>
-    </div>
-  </div>
-</div>
-
-<!-- Card -->
-<div class="w-full max-w-[920px] bg-white/95 backdrop-blur-lg rounded-2xl shadow-2xl
-            ring-1 ring-black/10 flex flex-col md:flex-row overflow-hidden">
-
-  <!-- LEFT HERO -->
-  <div class="hidden md:block md:w-1/2 relative">
-    <img src="/2.webp"
-         class="w-full h-full object-cover object-top"
-         alt="Onboarding">
-
-    <div class="absolute inset-0 bg-black/40"></div>
-
-    <div class="absolute bottom-0 left-0 p-10 text-white">
-      <h2 class="text-3xl font-bold leading-tight">
-        Launch your lending system
-      </h2>
-      <p class="mt-3 text-sm text-white/90 max-w-sm">
-        Built for Zambia. Secure. Compliant. Ready to scale.
-      </p>
-      <div class="mt-4 text-xs uppercase tracking-widest text-white/70">
-        Professional SaaS Onboarding
+      <div class="absolute inset-0 flex items-center justify-center text-center px-6">
+        <div>
+          <h1 class="text-3xl md:text-4xl font-extrabold text-white mb-3">
+            Institution Onboarding
+          </h1>
+          <p class="text-gray-200 max-w-xl mx-auto text-sm leading-relaxed">
+            Access to <strong>Creda Loans Management System</strong> is granted
+            only to verified lending institutions after compliance and
+            due-diligence review.
+          </p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- RIGHT FORM -->
-  <div class="w-full md:w-1/2 p-8 md:p-10">
+    <!-- INFO CARDS -->
+    <div class="grid md:grid-cols-2 gap-6">
 
-    <!-- Logo -->
-    <div class="mb-6 text-center">
-      <img src="/logo.webp" alt="Logo" class="mx-auto" width="190">
-      <h1 class="mt-4 text-xl font-semibold text-gray-800">
-        Create your account
-      </h1>
-      <p class="mt-1 text-sm text-gray-500">
-        Start setting up your organization
-      </p>
+      <!-- CARD 1: ONBOARDING & KYC -->
+      <div class="bg-white rounded-2xl shadow-md ring-1 ring-black/5 p-6 md:p-8">
+
+        <div class="flex items-center gap-3 mb-4">
+          <div class="h-10 w-10 rounded-xl bg-red-100 text-red-700 flex items-center justify-center">
+            <i class="fas fa-user-shield"></i>
+          </div>
+          <h2 class="text-xl font-bold text-gray-900">
+            Verification & Compliance
+          </h2>
+        </div>
+
+        <p class="text-sm text-gray-600 leading-relaxed mb-4">
+          <strong>Creda Loans</strong> follows a
+          <strong>manual onboarding process</strong>
+          to ensure responsible lending, regulatory compliance,
+          and secure handling of borrower financial data.
+        </p>
+
+        <div class="rounded-xl border border-red-200 bg-red-50 p-4 text-sm text-red-800 mb-4">
+          Registration is <strong>not automatic</strong>.
+          Platform access is granted only after successful review and approval.
+        </div>
+
+        <h4 class="text-sm font-semibold text-gray-900 mb-2">
+          Required Information
+        </h4>
+
+        <ul class="space-y-2 text-sm text-gray-700">
+          <li class="flex gap-2">
+            <i class="fas fa-check-circle text-red-600 mt-1"></i>
+            Authorized representative KYC details
+          </li>
+          <li class="flex gap-2">
+            <i class="fas fa-check-circle text-red-600 mt-1"></i>
+            Business Registration Number
+          </li>
+          <li class="flex gap-2">
+            <i class="fas fa-check-circle text-red-600 mt-1"></i>
+            TPIN (Tax Payer Identification Number)
+          </li>
+          <li class="flex gap-2">
+            <i class="fas fa-check-circle text-red-600 mt-1"></i>
+            Official institution contact details
+          </li>
+        </ul>
+      </div>
+
+      <!-- CARD 2: APPROVAL & API ACCESS -->
+      <div class="bg-white rounded-2xl shadow-md ring-1 ring-black/5 p-6 md:p-8">
+
+        <div class="flex items-center gap-3 mb-4">
+          <div class="h-10 w-10 rounded-xl bg-gray-900 text-white flex items-center justify-center">
+            <i class="fas fa-plug"></i>
+          </div>
+          <h2 class="text-xl font-bold text-gray-900">
+            Approval & Platform Access
+          </h2>
+        </div>
+
+        <p class="text-sm text-gray-600 leading-relaxed mb-4">
+          Once your institution is approved, your account will be activated
+          with full access to the <strong>Creda Loans platform</strong>
+          and optional system integrations.
+        </p>
+
+        <h4 class="text-sm font-semibold text-gray-900 mb-2">
+          After Approval
+        </h4>
+
+        <ul class="space-y-2 text-sm text-gray-700 mb-4">
+          <li class="flex gap-2">
+            <i class="fas fa-check-circle text-gray-900 mt-1"></i>
+            Secure institution login credentials issued
+          </li>
+          <li class="flex gap-2">
+            <i class="fas fa-check-circle text-gray-900 mt-1"></i>
+            Institution-level roles & access controls enabled
+          </li>
+          <li class="flex gap-2">
+            <i class="fas fa-check-circle text-gray-900 mt-1"></i>
+            API token generation for system integration
+          </li>
+          <li class="flex gap-2">
+            <i class="fas fa-check-circle text-gray-900 mt-1"></i>
+            Full audit logging & financial traceability
+          </li>
+        </ul>
+
+        <div class="rounded-xl border border-gray-200 bg-gray-50 p-4 text-sm text-gray-700">
+          <strong>API Integrations:</strong><br>
+          Approved institutions can integrate Creda Loans into
+          loan platforms, mobile apps, payment gateways,
+          accounting systems, or internal financial workflows
+          using secure, token-based APIs.
+        </div>
+      </div>
+
     </div>
 
-    <!-- Alerts -->
-    @if ($errors->any())
-      <div class="mb-4 rounded-xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-700">
-        {{ $errors->first() }}
-      </div>
-    @endif
+    <!-- ACTIONS -->
+    <div class="mt-8 flex flex-wrap gap-3 justify-center">
+      <a href="/"
+         class="rounded-xl bg-red-700 px-6 py-3 text-white text-sm font-semibold hover:bg-red-800 transition">
+        Contact Onboarding Team
+      </a>
 
-    <!-- Form -->
-    <form method="POST" action="{{ route('register') }}" class="space-y-4">
-      @csrf
-
-      <input type="text" name="name" placeholder="Full name"
-             value="{{ old('name') }}"
-             class="w-full rounded-xl border border-gray-300 px-4 py-3 text-sm font-medium
-             focus:outline-none focus:ring-2 focus:ring-[#353535]/80"
-             required>
-
-      <input type="email" name="email" placeholder="Work email"
-             value="{{ old('email') }}"
-             class="w-full rounded-xl border border-gray-300 px-4 py-3 text-sm font-medium
-             focus:outline-none focus:ring-2 focus:ring-[#353535]/80"
-             required>
-
-      <input type="password" name="password" placeholder="Password"
-             class="w-full rounded-xl border border-gray-300 px-4 py-3 text-sm font-medium
-             focus:outline-none focus:ring-2 focus:ring-[#353535]/80"
-             required>
-
-      <input type="password" name="password_confirmation"
-             placeholder="Confirm password"
-             class="w-full rounded-xl border border-gray-300 px-4 py-3 text-sm font-medium
-             focus:outline-none focus:ring-2 focus:ring-[#353535]/80"
-             required>
-
-      <button type="submit"
-              class="w-full rounded-xl bg-[#353535] px-4 py-3 text-[15px] font-semibold text-white
-              hover:bg-[#191919] transition">
-        Continue setup →
-      </button>
-    </form>
-
-    <!-- Footer -->
-    <div class="mt-6 flex items-center justify-between text-sm">
-      <a href="{{ route('login') }}"
-         class="font-medium text-[#353535] hover:text-[#191919] transition">
-        Already have an account?
+      <a href="/login"
+         class="rounded-xl border border-gray-300 px-6 py-3 text-sm font-semibold text-gray-700 hover:bg-gray-100 transition">
+        Back to Login
       </a>
     </div>
 
-    <p class="mt-6 text-center text-[11px] text-gray-500">
-      By continuing, you agree to our
-      <span class="underline">Terms</span> & <span class="underline">Privacy Policy</span>
-    </p>
-
-    <p class="mt-4 text-center text-[11px] text-gray-400">
-      Powered by <span class="font-semibold">Neurasoft Technologies</span>
+    <!-- FOOTNOTE -->
+    <p class="mt-6 text-center text-xs text-gray-500">
+      All submitted information is securely stored and reviewed in accordance
+      with applicable financial regulations, data protection laws,
+      and responsible lending standards.
     </p>
 
   </div>
-</div>
-
-<script>
-window.addEventListener('load', () => {
-  const s = document.getElementById('skeleton');
-  setTimeout(() => {
-    s.style.opacity = '0';
-    s.style.transition = 'opacity .35s ease';
-    setTimeout(() => s.remove(), 350);
-  }, 700);
-});
-</script>
 
 </body>
 </html>
